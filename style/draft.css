@@ -1,0 +1,187 @@
+nav{
+  width: 100%;
+  text-align: right;
+  background: #262626;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.menu-icon{
+  padding: 0.8em;
+}
+
+[data-menu="main"]{
+  display: none;
+  text-align: left;
+  width: 100%;
+}
+.documentation{
+  padding: 1em;
+  color: #424242;
+  font-size: 1.1em;
+}
+
+.documentation ul, .documentation ol{
+  padding-left: 1.5em;
+}
+
+.documentation ol li{
+  display: list-item;
+  list-style-type: decimal;
+}
+
+.documentation ul li{
+  display: list-item;
+  list-style-type: disc;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 0.5em solid #ccc;
+  color:#808080;
+}
+
+blockquote p {
+  display: inline;
+}
+
+[data-menu="submenu"]{
+  padding: 1em;
+  display: inline-block;
+  width: 100%;
+}
+[data-menu="submenu"] i{
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+[data-menu="submenu"] span{
+  vertical-align: middle;
+}
+
+nav ul li ul li{
+  background-color:#2b2b2b;
+}
+
+nav ul li ul{
+  display: none;
+}
+
+nav ul li{
+  display: block;
+}
+
+[data-show]{
+  padding: 1em;
+}
+
+[data-show]:hover{
+  background: #383838 !important;
+
+}
+
+.doc{
+  display: none;
+}
+
+.doc.active{
+  display: block;
+}
+
+.doc h1{
+  text-align: center;
+  font-size: 3em;
+}
+.documentation a{
+  color: rgb(0,184,212);
+}
+
+td{
+  border: 1px solid #424242;
+  padding: 0.2em;
+}
+
+.MathJax_Display{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.info, .success, .warning, .error, blockquote {
+    margin: 0.6em 0;
+
+    padding: 1em;
+}
+.info {
+    color: #00529B;
+    border-left: 0.5em solid #00529B;
+    background-color: #BDE5F8;
+}
+.success {
+    color: #4F8A10;
+    border-left: 0.5em solid #4F8A10;
+    background-color: #DFF2BF;
+}
+.warning {
+    color: #9F6000;
+    border-left: 0.5em solid #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    border-left: 0.5em solid #D8000C;
+    background-color: #FFBABA;
+}
+
+/** Small Screens, Tablets (720px) **/
+@media screen and (min-width: 45em) {
+  body{
+    overflow: hidden;
+  }
+
+  .documentation{
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  nav{
+    width: 30%;
+    max-width: 30%;
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    float: left;
+  }
+
+  [data-menu="main"]{
+      display: block;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+}
+
+/** Medium Devices, Desktops (992px)**/
+@media screen and (min-width: 62em) {
+  nav{
+    width: 20%;
+    max-width: 20%;
+  }
+}
+
+/** CSS for Printing **/
+@media print {
+  nav{
+    display: none;
+  }
+
+  .documentation{
+    font-size: 1em;
+  }
+
+  .doc h1{
+    font-size: 2em;
+  }
+}
