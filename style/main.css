@@ -25,6 +25,20 @@ nav{
   font-size: 1.1em;
 }
 
+.documentation ul, .documentation ol{
+  padding-left: 1.5em;
+}
+
+.documentation ol li{
+  display: list-item;
+  list-style-type: decimal;
+}
+
+.documentation ul li{
+  display: list-item;
+  list-style-type: disc;
+}
+
 blockquote {
   background: #f9f9f9;
   border-left: 0.5em solid #ccc;
@@ -137,7 +151,7 @@ td{
   body{
     overflow: hidden;
   }
-  
+
   .documentation{
     height: 100%;
     max-height: 100%;
@@ -199,5 +213,15 @@ td{
 
 /** CSS for Printing **/
 @media print {
+  nav{
+    display: none;
+  }
 
+  .documentation{
+    font-size: 1em;
+  }
+
+  .doc h1{
+    font-size: 2em;
+  }
 }
