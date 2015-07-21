@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('.video-wrapper').fitVids();
 		$("[data-menu='submenu']").click(function(){
 			$(this).parent().find("ul").slideToggle( "fast" );
+			$(this).find("i").toggleClass('fa-plus-circle fa-minus-circle');
 		});
 
 		if(window.location.hash) {

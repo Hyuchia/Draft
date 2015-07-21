@@ -137,14 +137,13 @@ td{
   body{
     overflow: hidden;
   }
+  
   .documentation{
     height: 100%;
     max-height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
   }
-
-
 
   nav{
     width: 30%;
@@ -167,12 +166,10 @@ td{
 
 /** Medium Devices, Desktops (992px)**/
 @media screen and (min-width: 62em) {
-
   nav{
     width: 20%;
     max-width: 20%;
   }
-
 }
 
 /** HD Screen, Large Devices, Wide Screens (1200px) **/
