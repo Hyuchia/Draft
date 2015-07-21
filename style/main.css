@@ -25,6 +25,28 @@ nav{
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 1em;
+  color: #424242;
+  font-size: 1.1em;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  quotes: "\201C""\201D""\2018""\2019";
+  color:#808080;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 [data-menu="submenu"]{
@@ -74,7 +96,12 @@ nav ul li{
   text-align: center;
 }
 
-.info, .success, .warning, .error {
+td{
+  border: 1px solid #424242;
+  padding: 0.2em;
+}
+
+.info, .success, .warning, .error, blockquote {
     margin: 0.6em 0;
 
     padding: 1em;
@@ -133,12 +160,6 @@ nav ul li{
   .menu-icon{
     display: none;
   }
-
-  td{
-    border: 1px solid #424242;
-    padding: 0.2em;
-  }
-
 }
 
 /** Medium Devices, Desktops (992px)**/
