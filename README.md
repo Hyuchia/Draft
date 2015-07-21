@@ -3,6 +3,8 @@ A simple way to write and build your documentation.
 
 Draft is a great tool for every programmer, writing documentation is not exactly the most fun part of programming, neither is designing a website for it or organizing it, you'll be able to write your documentation on either HTML or Markdown, the web page will be created automatically and you won't have to worry about it.
 
+Visit the [Webpage](http://draft.hyuchia.com/) and checkout the [demo](http://draft.hyuchia.com/demo/).
+
 ## Quick Start
 
 1. Download the latest version from the [Releases](https://github.com/HyuchiaDiego/Draft/releases) page.
