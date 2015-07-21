@@ -1,8 +1,6 @@
-<h1>Messages</h1>
+# Messages
 
-<p>
-  Display any kind of messages to better inform everyone!
-</p>
+Display any kind of messages to better inform everyone!
 
 <div class="info">Info message</div>
 
