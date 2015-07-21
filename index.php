@@ -132,6 +132,12 @@
 		<link rel="stylesheet" href="style/main.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+			});
+		</script>
 		<script src="js/prism.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>

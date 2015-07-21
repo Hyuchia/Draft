@@ -20,10 +20,6 @@ nav{
   width: 100%;
 }
 .documentation{
-  height: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
   padding: 1em;
   color: #424242;
   font-size: 1.1em;
@@ -31,18 +27,8 @@ nav{
 
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  quotes: "\201C""\201D""\2018""\2019";
+  border-left: 0.5em solid #ccc;
   color:#808080;
-}
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
 }
 
 blockquote p {
@@ -96,10 +82,18 @@ nav ul li{
   text-align: center;
   font-size: 3em;
 }
+.documentation a{
+  color: rgb(0,184,212);
+}
 
 td{
   border: 1px solid #424242;
   padding: 0.2em;
+}
+
+.MathJax_Display{
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .info, .success, .warning, .error, blockquote {
@@ -143,6 +137,14 @@ td{
   body{
     overflow: hidden;
   }
+  .documentation{
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+
 
   nav{
     width: 30%;
