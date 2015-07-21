@@ -19,7 +19,13 @@ nav{
   text-align: left;
   width: 100%;
 }
-
+.documentation{
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 1em;
+}
 
 [data-menu="submenu"]{
   padding: 1em;
@@ -58,7 +64,6 @@ nav ul li{
 
 .doc{
   display: none;
-  padding: 1em;
 }
 
 .doc.active{
@@ -67,6 +72,32 @@ nav ul li{
 
 .doc h1{
   text-align: center;
+}
+
+.info, .success, .warning, .error {
+    margin: 0.6em 0;
+
+    padding: 1em;
+}
+.info {
+    color: #00529B;
+    border-left: 0.5em solid #00529B;
+    background-color: #BDE5F8;
+}
+.success {
+    color: #4F8A10;
+    border-left: 0.5em solid #4F8A10;
+    background-color: #DFF2BF;
+}
+.warning {
+    color: #9F6000;
+    border-left: 0.5em solid #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    border-left: 0.5em solid #D8000C;
+    background-color: #FFBABA;
 }
 
 /** Place here all Media Queries and it's styles.**/
@@ -81,6 +112,10 @@ nav ul li{
 
 /** Small Screens, Tablets (720px) **/
 @media screen and (min-width: 45em) {
+  body{
+    overflow: hidden;
+  }
+
   nav{
     width: 30%;
     max-width: 30%;
@@ -99,10 +134,9 @@ nav ul li{
     display: none;
   }
 
-  .doc{
-    width: 70%;
-    max-width: 70%;
-    float: right;
+  td{
+    border: 1px solid #424242;
+    padding: 0.2em;
   }
 
 }
@@ -113,11 +147,6 @@ nav ul li{
   nav{
     width: 20%;
     max-width: 20%;
-  }
-
-  .doc{
-    width: 80%;
-    max-width: 80%;
   }
 
 }
