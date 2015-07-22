@@ -1525,3 +1525,4 @@ class Parsedown
                           'time',
     );
 }
+?>
