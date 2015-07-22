@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<!--Aegis Framework | MIT License | http://www.aegisframework.com/ -->
+<!--Draft | MIT License | http://draft.hyuchia.com/-->
 
 <html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web's language-->
 
