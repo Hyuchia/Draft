@@ -16,10 +16,11 @@
 		$menu = "";
 		$pages = "";
     foreach (glob("$directory/*", GLOB_MARK) as $f) {
-			$find = array(".html", ".md",".php");
-			$replace = array("","","");
+			$find = array(".html", ".md",".php"," ");
+			$replace = array("","","","-");
+			$spaces = array("_","-");
 			$nice_name = str_replace($find, $replace, basename($f));
-			$cap_name =  ucwords(strtolower((str_replace("_"," ", $nice_name))));
+			$cap_name =  ucwords(strtolower((str_replace($spaces," ", $nice_name))));
       if (substr($f, -1) === '/') {
 				$content = build($f);
 				$pages.= $content[1];
