@@ -95,10 +95,13 @@
 
 	</head>
 	<body>
-			<nav>
+			<nav class="clearfix">
+				<!-- Place your home URL in the href attribute-->
+				<a href="" class="home-icon"><i class="fa fa-home"></i> <span>Home</span></a>
 				<span class="fa fa-bars menu-icon" ></span>
 				<ul data-menu="main">
-					<li data-show='main'>Home</li>
+					<!-- This link will take you to your main page. Change text if needed.-->
+					<li data-show='main'>Welcome</li>
 					<?php echo $content[0]; ?>
 				</ul>
 			</nav>

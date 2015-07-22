@@ -5,8 +5,18 @@ nav{
   color: #fff;
   font-size: 1.2rem;
 }
-.menu-icon{
+.menu-icon, .home-icon{
   padding: 0.8em;
+}
+
+
+.home-icon{
+  text-align: left;
+  float: left;
+}
+
+.home-icon span{
+  display: none;
 }
 
 [data-menu="main"]{
@@ -160,6 +170,16 @@ td{
 
   .menu-icon{
     display: none;
+  }
+
+  .home-icon{
+    width: 100%;
+    text-align: center;
+    display: block;
+    float: none;
+  }
+  .home-icon span{
+    display: initial;
   }
 }
 
